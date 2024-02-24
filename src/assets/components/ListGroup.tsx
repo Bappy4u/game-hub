@@ -1,6 +1,7 @@
 function ListGroup() {
     return (
         <>
+            <h1>List group</h1>
             <ul className="list-group">
                 <li className="list-group-item">Cras justo odio</li>
                 <li className="list-group-item">Dapibus ac facilisis in</li>
