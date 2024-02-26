@@ -1,6 +1,7 @@
 import ListGroup from "./assets/components/ListGroup";
 import Button from "./assets/components/Button";
 import Alert from "./assets/components/Alert";
+import Like from "./assets/components/Like/Like"
 import {useState} from "react";
 
 
@@ -32,6 +33,7 @@ function App() {
         <div className="container">
             {alertVisible && <Alert onclick={handleCloseButtonClick}>{alertText}</Alert>}
             <ListGroup items={items} heading={"Cities"} onSelectItem={handleSelectItem}/>
+            <Like></Like>
             <Button text="Primary Button" color="primary" onClick={handleButtonClick}></Button>
             <Button text="Secondary Button" color="secondary" onClick={handleButtonClick}></Button>
             <Button text="Danger Button" color="danger" onClick={handleButtonClick}></Button>
