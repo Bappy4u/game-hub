@@ -8,7 +8,7 @@ interface props {
 }
 
 const ExpandableText = ({children, maxChars = 100}: props) => {
-    let [textLength, setMaxChars] = useState(maxChars);
+    let [textLength, setMaxChars] = useState(children.length < maxChars || maxChars < 5 ? 100 : maxChars);
     let [buttonText, setButtonText] = useState("Show More");
 
     let handleButtonClick = () => {
